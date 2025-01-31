@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased overflow-x-hidden`}
       >
         <GlobalStateProvider>{children}</GlobalStateProvider>
         {/* {children} */}

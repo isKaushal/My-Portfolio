@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { delay, motion } from "framer-motion";
 
 // components
-import { GmailIcon, InstaGramIcon, LinkedinIcon } from "./SocialIcons";
+import { GmailIcon, InstaGramIcon, LinkedinIcon } from "./socialIcons";
 
 // helpers
 import HeroButtons from "@/helpers/heroIconsHelper";

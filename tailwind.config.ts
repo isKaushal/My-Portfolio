@@ -7,11 +7,14 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "clr-black":"#0a0a0a",
+        "clr-black": "#0a0a0a",
       },
       fontFamily: {
         geist: ["var(--font-geist-sans)"],

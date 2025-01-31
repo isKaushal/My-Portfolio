@@ -10,14 +10,16 @@ import {
 } from "@/components/heroAnimation";
 import Section from "@/components/Section";
 import Navbar from "@/components/navbar";
-import HeroSocialButtons from "@/components/HeroSocialButtons";
+import SkillsSection from "@/components/skillsSection";
+import HeroSocialButtons from "@/components/heroSocialButtons";
+import Projects from "@/components/projects";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <HeroEntryAnimation />
-      <Section className="h-[35rem] flex items-center justify-center">
+      <Section className="h-[70vh] flex items-center justify-center">
         <div className="flex justify-center gap-10">
           <motion.div
             initial={{ x: -30, opacity: 0 }}
@@ -75,9 +77,21 @@ const Home = () => {
         </div>
       </Section>
 
-      <Section>
+      <Section className="my-20 mt-40 p-4">
         <div>
-          <h1>This is another section</h1>
+          <h1 className="text-3xl text-center">Skills and Technologies </h1>
+        </div>
+        <div>
+          <SkillsSection />
+        </div>
+      </Section>
+
+      <Section className="my-20 mt-40 p-4">
+        <div>
+          <h1 className="text-3xl text-center">Projects </h1>
+        </div>
+        <div>
+          <Projects />
         </div>
       </Section>
     </>

@@ -29,7 +29,7 @@ const HeroEntryAnimation: React.FC = () => {
           <motion.div
             exit={{ opacity: 0 }}
             transition={{ delay: 1, duration: 1, stiffness: 100 }}
-            className="absolute flex justify-center items-center top-0 left-0 bg-clr-black z-[5] overflow-hidden w-screen h-screen"
+            className="absolute flex justify-center items-center top-0 left-0  bg-clr-black z-[5] overflow-x-hidden w-dvw h-screen"
           >
             <div className="text-5xl">
               {IntitialLine.slice(0, isInitialLineNumber + 1)}
@@ -45,11 +45,11 @@ const HeroSliderAnimation: React.FC = () => {
   const [animationNumber, setAnimationNumber] = useState<number>(0);
 
   const ArrayofAnimatedLines: string[] = [
-    "Frontend Developer",
+    "Frontend Developer ",
     "Web Developer",
     "React Developer",
     "Next Developer",
-    "Gamer",
+    "Casual Gamer 🎮",
   ];
 
   useEffect(() => {
