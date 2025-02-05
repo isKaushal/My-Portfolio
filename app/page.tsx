@@ -94,6 +94,12 @@ const Home = () => {
           <Projects />
         </div>
       </Section>
+
+      <Section>
+        <div>
+          <h1 className="text-3xl text-center">Experince</h1>
+        </div>
+      </Section>
     </>
   );
 };

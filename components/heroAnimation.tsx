@@ -63,19 +63,30 @@ const HeroSliderAnimation: React.FC = () => {
   }, [animationNumber]);
 
   return (
-    <div className="flex">
+    <div className="flex relative">
       <h2 className="text-3xl">I'm a</h2>
       <AnimatePresence>
         <motion.div
+          id="animated-line"
           key={animationNumber}
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -50, opacity: 0 }}
-          transition={{ duration: 0.5, type: "spring", stiffness: 80 }}
+          transition={{
+            duration: 0.5,
+            type: "spring",
+            stiffness: 80,
+          }}
           className="absolute text-3xl ml-[4.7rem]"
         >
           {ArrayofAnimatedLines[animationNumber]}
         </motion.div>
+        {/* <motion.div
+          animate={{
+            width: document?.getElementById("animated-line")?.offsetWidth,
+          }}
+          className="w-full h-[3px] bg-zinc-500 absolute -bottom-2"
+        /> */}
       </AnimatePresence>
     </div>
   );
